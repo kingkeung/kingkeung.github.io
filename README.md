@@ -7,6 +7,7 @@ Modify the following files:
 * index.html.haml
 
 Optional: create the corresponding css and html files by running:
+
 ...
 haml index.html.haml index.html
 sass --update common.css.sass:common.css
