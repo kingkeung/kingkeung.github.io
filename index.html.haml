@@ -1,0 +1,198 @@
+/ Commands to convert to regular html and css:
+/ haml index.html.haml index.html
+/ sass --update common.css.sass:common.css
+
+%html
+  %head
+    %link{:href => "http://fonts.googleapis.com/css?family=Oxygen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,300,500", :rel => "stylesheet", :type => "text/css"}/
+
+    %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css", :rel => "stylesheet"}
+
+    %link{:href => "http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    
+    %link{:href => "common.css", :rel => "stylesheet", :type => "text/css"}/
+    
+
+    %title
+      New to League - a guide for players new to League of Legends
+
+  %body{"data-spy" => "scroll", "data-target" => "#navbar-collapse"}
+
+
+    / =============================================================================================
+    / navigation menu
+    %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        #navbar-collapse.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{:href => "#"} Link
+            %li
+              %a{:href => "#"} Link
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                External Resources
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{href: "http://www.reddit.com/r/leagueoflegends"} /r/leagueoflegends
+                %li
+                  %a{href: "http://www.reddit.com/r/summonerschool"} /r/summonerschool
+                %li.divider
+                %li
+                  %a{href: "http://leagueoflegends.com"} official lol site
+                %li
+                  %a{href: "https://www.youtube.com/user/unswlolsoc/videos"} unswlolsoc videos
+                %li
+                  %a{href: "http://www.leaguereplays.com/"} replay recording
+                %li.divider
+                %li
+                  %a{href: "http://op.gg"} summoner lookup
+                %li
+                  %a{href: "http://wardscore.loltools.net"} ward score lookup
+
+
+    / =============================================================================================
+    / jumbotron
+    .jumbotron
+      .container
+        %h1
+          New to League?
+        %p
+          This guide is for completely new players, written by a new player
+
+
+    / =============================================================================================
+    .section.section-intro
+      .container.sub-section
+        %h2 About this guide
+        %p
+          I'm TigerLionBear (NA). I started playing League of Legends two months ago.  As my first moba, I found the experience to be...overwhelming. With this guide, I hope to clarify hurdles I navigated so you can quickly bring value to the team. I'm a silver player but my goal is to at least catch up to my younger brother in gold. You can follow my progress at 
+          %a{href: "http://gamefolio.co/kingkeung"} gamefolio.co/kingkeung.
+          Welcome to summoner's rift! 
+        %p
+          In this guide I focus on Summoner's Rift 5v5, the most played map and game mode in LoL.
+
+
+    / =============================================================================================
+    .section.section-before-you-begin
+      .container.sub-section
+        %h2 Before you begin
+
+        %h3 The right mindset
+        .col-md-7
+          %p
+            The community has a toxic reputation. As a new player, you must be prepared to have a bad time. In the first match I unintentionally fed my lane so my teammates gave me a 'tip': Go uninstall the game.
+          %p
+            Since there are only 5 players per team, you significantly impact the outcome of any given match. Coupled with the fact that nobody likes to lose, tensions will run high until it spirals into a blame game where it is your fault the team lost. Learn to ignore everyone and just play.
+          %p
+            Here is the reality: while it is great to win, somebody has to lose. Don't get worked up over it. Even most pro players win only 50-60% of their matches.
+          %p
+            Additionally, the game was released in 2009 so most players have been around for years. You can't be expected to be at the same skill level immediately. This includes players at 'your level', as smurfs (second accounts) are extremely prevalent. 
+          %p
+            Instead,
+            %b ignore the haters and ragers.
+            Focus only on yourself as you will be making mistakes that need to be fixed. It is not worth wasting your energy talking back to some internet stranger. As you fix these mistakes, you will naturally climb up in rankings.
+
+        .col-md-4.col-md-offset-1
+          .thumbnail
+            %img{src: "images/your-fault.jpg", class: "img-responsive"}/
+            .caption
+              %P
+                It is 100% your fault the cookies are burnt. Reported.
+
+      .container.sub-section
+        %h3 It's dangerous to go alone!
+        
+        .col-md-7.col-md-offset-1.col-md-push-4
+          %p
+            A lot of the initial confusion and angst can be mitigated by having a friend to play with. If they are experienced, explanations will speed up your initiation into League. If they are also new, having someone to stumble around with is comforting. I would not have climbed so quickly without my friends and brother (shoutout to bouwser, LateNiteLazer, and viciouskittycat).
+
+          %p
+            If you are still venturing into League solo there are many resources out there created by the community that you can tap into. Don't be afraid to reach out to 
+            %a{href: "http://www.reddit.com/r/summonerschool/"} /r/summonerschool/
+            for help.
+
+        .col-md-4.col-md-pull-8
+          .thumbnail
+            %img{src: "images/friend.jpg", class: "img-responsive"}/
+            .caption
+              %P
+                A buddy or someone from /r/summonerschool can show you the ropes!
+
+
+    / =============================================================================================
+    .section.section-signup
+      .container.sub-section
+        %h2 Getting started - signup and installation
+
+        %p
+          The first thing to do is to 
+          %a{href: "http://leagueoflegends.com"} register an account.
+          Once signed up, you can 
+          %a{href: "https://signup.leagueoflegends.com/en/signup/redownload"} download the client. 
+
+        %p
+          Riot (the company behind LoL) has a referral system with rewards, so show one of your friends your love during sign up. If you hate them all, feel free to say I referred you!
+          %i.fa.fa-heart-o 
+          %a{href: "http://signup.leagueoflegends.com/?ref=537e521746188119901705"} http://signup.leagueoflegends.com/?ref=537e521746188119901705
+
+
+      / =============================================================================================
+      .section.section-tutorials
+        .container.sub-section
+          %h2 Completing the tutorials
+
+          %p
+            Starting out, you will be asked how skilled you are with rts / moba games. Depending on your response, you will then be prompted to go into either the basic tutorial or battle training. 
+
+          %p
+            You don't have to do these tutorials immediately, they can be accessed anytime by hitting play at the top. Both are straightforward and I recommend completing them, although there are caveats I would like to point out with each.
+
+        .container.sub-section
+          %h3 Basic tutorial
+
+          .col-md-7
+            %ul
+              %li
+                You play Ashe, a damage focused hero. In the tutorial, they tell you to buy thornmail, which is a defensive item. Never do this again. You want to focus on damage, not defense with her.
+              %li
+                Minions only give gold when you deal the killing blow. Instead of mindlessly auto attacking them, account for your delay time and minion hp to ensure you get the last hit if other sources of damage are being applied. Last hitting is a crucial skill so you should start practicing it immediately.
+              %li
+                Skills don't damage towers or other structures so firing Volley won't kill the tower quicker.
+              %li
+                After they show you how to unlock the camera with 'Y', you should keep it unlocked. You can always refocus on your champion with spacebar, but learn to play with the camera unlocked for better visibility.
+
+          .col-md-4.col-md-offset-1
+            .thumbnail
+              %img{src: "images/never-again.jpg", class: "img-responsive"}/
+              .caption
+                %P
+                  The only time you will ever buy Thornmail on Ashe. #neveragain
+
+
+        .container.sub-section
+          %h3 Battle training
+
+          %Ul
+            %li 
+              You are introduced to the main game map, Summoner's Rift. Here there are three lanes to choose from. You are also allowed to choose from three champions. It doesn't matter which lane or champion you select, although you should familiarize yourself with lanes and roles prior to playing a pvp match.
+            %li
+              You will get access to more skills, but don't forget about your auto attack. Auto attacks are your primary source of damage in most cases.
+            %li
+              Part of the tutorial has you enter the jungle and kill creeps, an alternative way to gain gold and experience. This is usually done by the jungler role. However, jungling is difficult to do early on as you lack item knowledge, are missing the Smite summoner skill, and won't have runes / masteries (they help a lot). I wouldn't worry about this until later.
+
+
+
+    / Javascript
+    %script{src: "http://code.jquery.com/jquery-1.11.0.min.js"}
+    %script{src: "http://code.jquery.com/jquery-migrate-1.2.1.min.js"}
+    %script{src: "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
