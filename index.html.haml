@@ -69,7 +69,7 @@
 
 
     / =============================================================================================
-    .section.section-intro
+    .section.section-intro.clearfix
       .container.sub-section
         %h2 About this guide
         %p
@@ -81,7 +81,7 @@
 
 
     / =============================================================================================
-    .section.section-before-you-begin
+    .section.section-before-you-begin.clearfix
       .container.sub-section
         %h2 Before you begin
 
@@ -125,11 +125,11 @@
             .caption
               %P
                 A buddy or someone from /r/summonerschool can show you the ropes! Art by
-                %a{href: "http://sizow.deviantart.com/"} sizow
+                %a{href: "http://sizow.deviantart.com/"} sizoW
 
 
     / =============================================================================================
-    .section.section-signup
+    .section.section-signup.clearfix
       .container.sub-section
         %h2 Getting started - signup and installation
 
@@ -146,7 +146,7 @@
 
 
     / =============================================================================================
-    .section.section-tutorials
+    .section.section-tutorials.clearfix
       .container.sub-section
         %h2 Completing the tutorials
 
@@ -191,7 +191,7 @@
 
 
     / =============================================================================================
-    .section.section-additional-tips
+    .section.section-additional-tips.clearfix
       .container.sub-section
         %h2 Anything else before I dive in?
 
@@ -233,9 +233,9 @@
         %table.table.table-hover
           %thead
             %tr
-              %th Role 
-              %th Lane
-              %th Description
+              %th.col-md-3 Role 
+              %th.col-md-2 Lane
+              %th.col-md-7 Description
           %tbody
             %tr
               %td Tank / Bruiser
@@ -553,22 +553,73 @@
             %b Hold tab in game for the scoreboard. 
             It shows opponent's items, creep score, and other stats. This information is updated the last time they were visible, so a lv 1 enemy may not be lv 1 anymore if they haven't been seen recently. Dead players are shown in red with a respawn timer. Enemies that are highlighted are currently visible on the map (Veigar and Malphite).
 
+
     / =============================================================================================
-    .section.section-playing
+    .section.section-playing.clearfix
       .container.sub-section
         %h2 I'm ready! Lets do some matches
 
-        %h3 Time to stomp some bots
+        %p In general you will want to do matches vs ai, then blind pick, then draft pick. Once lv 30 you are able to do ranked matches. Below I talk about each mode as well as areas to focus on. Further explanation of each focus can be found in the next section: mistakes and improving
 
+      .container.sub-section
+        %h3 Time to stomp some bots
+        .col-md-7
+          %p
+            Until lv3, you are required to do bot (vs AI) games. You are welcome to continue playing against them beyond that point until you are comfortable enough to go against other players. Bots do not follow the meta roles and instead send two top, one mid, and two bot. They also don't team fight properly. Because of this you can play any hero in any lane. Just get familiar with the game in general.
+
+          %p
+            %b Things to work on:
+            %ul
+              %li champion knowledge
+              %li item knowledge
+              %li last hitting minions for gold
+              %li trading with enemies
+
+        .col-md-4.col-md-offset-1
+          .thumbnail
+            %img{src: "images/blitzcrank.jpg", class: "img-responsive"}/
+            .caption
+              %p
+                Art by 
+                %a{href: "http://lostadopt.deviantart.com/"} LostAdopt  
+
+      .container.sub-section
         %h3 Blind pick pvp
 
+        %p
+          While draft and blind pick are unlocked at the same time, I recommend moving to blind pick once you are ready to play against players. As you will only be familiar with a few champions, the banning and counter picking process will just be a mystery anyways.
+
+        %p
+          %b Things to work on:
+          %ul
+            %li all of the previous recommendations
+            %li map awareness
+            %li team fights
+            %li communicating via pings
+
+      .container.sub-section
         %h3 Draft pick pvp
 
+
+
+        %p
+          By now I recommend that you select a few roles and champions to master and 'main'. Make sure you have at least 2 champions per 'main' role, as your champion may be banned or selected by the opposing team. Having an alternative role is useful when someone else on your team wants to play your primary role.
+
+        %p
+          %b Things to work on:
+          %ul
+            %li all of the previous recommendations
+            %li champion mastery
+            %li champion matchups & counterpicks
+            %li team composition
+            %li dragon and baron control
+
+      .container.sub-section
         %h3 Ranked games
 
 
     / =============================================================================================
-    .section.section-improvement
+    .section.section-improvement.clearfix
       .container.sub-section
         %h2 Common mistakes / ways to improve
 
@@ -584,7 +635,7 @@
 
 
     / =============================================================================================
-    .section.section-misc
+    .section.section-misc.clearfix
       .container.sub-section
         %h2 Miscellaneous
 
