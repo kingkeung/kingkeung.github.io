@@ -38,6 +38,9 @@ ul {
   background-size: cover;
   color: white;
   margin-bottom: 0px; }
+  .jumbotron .container {
+    padding-top: 75px;
+    padding-bottom: 75px; }
 
 .thumbnail {
   -moz-box-shadow: none;
