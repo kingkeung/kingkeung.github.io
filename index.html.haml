@@ -24,49 +24,48 @@
     / =============================================================================================
     / navigation menu
     %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
-      .container
-        .navbar-header
-          %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-        #navbar-collapse.collapse.navbar-collapse.navbar-scrollspy
-          %ul.nav.navbar-nav
-            %li
-              %a{:href => "#intro"} Intro
-            %li
-              %a{:href => "#signup"} Sign Up
-            %li
-              %a{:href => "#tutorials"} Tutorials
-            %li
-              %a{:href => "#matchprep"} Match Prep
-            %li
-              %a{:href => "#matches"} Matches
-            %li
-              %a{:href => "#improving"} Improving
-            %li
-              %a{:href => "#misc"} Misc
+      .navbar-header
+        %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      #navbar-collapse.collapse.navbar-collapse.navbar-scrollspy
+        %ul.nav.navbar-nav
+          %li
+            %a{:href => "#intro"} Intro
+          %li
+            %a{:href => "#signup"} Sign Up
+          %li
+            %a{:href => "#tutorials"} Tutorials
+          %li
+            %a{:href => "#matchprep"} Match Prep
+          %li
+            %a{:href => "#matches"} Matches
+          %li
+            %a{:href => "#improving"} Improving
+          %li
+            %a{:href => "#misc"} Misc
 
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                External Resources
-                %span.caret
-              %ul.dropdown-menu{:role => "menu"}
-                %li
-                  %a{href: "http://www.reddit.com/r/leagueoflegends"} /r/leagueoflegends
-                %li
-                  %a{href: "http://www.reddit.com/r/summonerschool"} /r/summonerschool
-                %li.divider
-                %li
-                  %a{href: "https://www.youtube.com/user/unswlolsoc/videos"} unswlolsoc videos
-                %li
-                  %a{href: "http://www.leaguereplays.com/"} replay recording
-                %li.divider
-                %li
-                  %a{href: "http://op.gg"} summoner lookup
-                %li
-                  %a{href: "http://wardscore.loltools.net"} ward score lookup
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              External Resources
+              %span.caret
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{href: "http://www.reddit.com/r/leagueoflegends"} /r/leagueoflegends
+              %li
+                %a{href: "http://www.reddit.com/r/summonerschool"} /r/summonerschool
+              %li.divider
+              %li
+                %a{href: "https://www.youtube.com/user/unswlolsoc/videos"} unswlolsoc videos
+              %li
+                %a{href: "http://www.leaguereplays.com/"} replay recording
+              %li.divider
+              %li
+                %a{href: "http://op.gg"} summoner lookup
+              %li
+                %a{href: "http://wardscore.loltools.net"} ward score lookup
 
 
     / =============================================================================================
@@ -582,21 +581,21 @@
               %td 
                 Available at lv 30. Same as Draft Pick except rated. Rankings are divided into Bronze, Silver, Gold, Platinum, Diamond, and Challenger. You will have to play an initial 10 matches to determine your standing. If you play with a partner, your hidden skill rating is boosted (so you play against slightly harder opponents).
 
-      / .container.sub-section
-      /   %h3 Interface notes
+      .container.sub-section
+        %h3 Interface notes
 
-      /   %p While most of the interface is easy to pick up, there are two notes I want to make.
+        %p While most of the interface is easy to pick up, there are two notes I want to make.
 
-      /   .interface
+        .interface
 
-      /     %p.teammates
-      /       To the left is your team's status. You can tell 
-      /       %b when their ultimate skill is available
-      /       by the green circle.
+          %p.teammates
+            To the left is your team's status. You can tell 
+            %b when their ultimate skill is available
+            by the green circle.
 
-      /     %p.tab 
-      /       %b Hold tab in game for the scoreboard. 
-      /       It shows opponent's items, creep score, and other stats. This information is updated the last time they were visible, so a lv 1 enemy may not be lv 1 anymore if they haven't been seen recently. Dead players are shown in red with a respawn timer. Enemies that are highlighted are currently visible on the map (Veigar and Malphite).
+          %p.tab 
+            %b Hold tab in game for the scoreboard. 
+            It shows opponent's items, creep score, and other stats. This information is updated the last time they were visible, so a lv 1 enemy may not be lv 1 anymore if they haven't been seen recently. Dead players are shown in red with a respawn timer. Enemies that are highlighted are currently visible on the map (Veigar and Malphite).
 
 
     / =============================================================================================
