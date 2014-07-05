@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('body').scrollspy({
     target: '.navbar-scrollspy',
-    offset: 450
+    offset: 470
   });
 
   $('a[href*=#]:not([href=#])').click(function() {
