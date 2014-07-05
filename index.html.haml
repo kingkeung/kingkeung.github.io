@@ -13,7 +13,10 @@
     %link{href: "http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     
     %link{href: "common.css", :rel => "stylesheet", :type => "text/css"}/
-    
+
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/    
 
     %title
       New to League - a guide for players new to League of Legends
@@ -24,48 +27,49 @@
     / =============================================================================================
     / navigation menu
     %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
-      .navbar-header
-        %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-      #navbar-collapse.collapse.navbar-collapse.navbar-scrollspy
-        %ul.nav.navbar-nav
-          %li
-            %a{:href => "#intro"} Intro
-          %li
-            %a{:href => "#signup"} Sign Up
-          %li
-            %a{:href => "#tutorials"} Tutorials
-          %li
-            %a{:href => "#matchprep"} Match Prep
-          %li
-            %a{:href => "#matches"} Matches
-          %li
-            %a{:href => "#improving"} Improving
-          %li
-            %a{:href => "#misc"} Misc
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        #navbar-collapse.collapse.navbar-collapse.navbar-scrollspy
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "#intro"} Intro
+            %li
+              %a{:href => "#signup"} Sign Up
+            %li
+              %a{:href => "#tutorials"} Tutorials
+            %li
+              %a{:href => "#matchprep"} Match Prep
+            %li
+              %a{:href => "#matches"} Matches
+            %li
+              %a{:href => "#improving"} Improving
+            %li
+              %a{:href => "#misc"} Misc
 
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              External Resources
-              %span.caret
-            %ul.dropdown-menu{:role => "menu"}
-              %li
-                %a{href: "http://www.reddit.com/r/leagueoflegends"} /r/leagueoflegends
-              %li
-                %a{href: "http://www.reddit.com/r/summonerschool"} /r/summonerschool
-              %li.divider
-              %li
-                %a{href: "https://www.youtube.com/user/unswlolsoc/videos"} unswlolsoc videos
-              %li
-                %a{href: "http://www.leaguereplays.com/"} replay recording
-              %li.divider
-              %li
-                %a{href: "http://op.gg"} summoner lookup
-              %li
-                %a{href: "http://wardscore.loltools.net"} ward score lookup
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                External Resources
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a{href: "http://www.reddit.com/r/leagueoflegends"} /r/leagueoflegends
+                %li
+                  %a{href: "http://www.reddit.com/r/summonerschool"} /r/summonerschool
+                %li.divider
+                %li
+                  %a{href: "https://www.youtube.com/user/unswlolsoc/videos"} unswlolsoc videos
+                %li
+                  %a{href: "http://www.leaguereplays.com/"} replay recording
+                %li.divider
+                %li
+                  %a{href: "http://op.gg"} summoner lookup
+                %li
+                  %a{href: "http://wardscore.loltools.net"} ward score lookup
 
 
     / =============================================================================================
