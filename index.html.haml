@@ -18,12 +18,12 @@
     %title
       New to League - a guide for players new to League of Legends
 
-  %body{"data-spy" => "scroll", "data-target" => "#navbar-scrollspy", "data-offset" => "50"}
+  %body{"data-spy" => "scroll", "data-target" => ".navbar-scrollspy", "data-offset" => "50"}
 
 
     / =============================================================================================
     / navigation menu
-    %nav#navbar-scrollspy.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+    %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
       .container
         .navbar-header
           %button.navbar-toggle{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
@@ -31,7 +31,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-        #navbar-collapse.collapse.navbar-collapse
+        #navbar-collapse.collapse.navbar-collapse.navbar-scrollspy
           %ul.nav.navbar-nav
             %li
               %a{:href => "#intro"} Intro
@@ -80,7 +80,7 @@
 
 
     / =============================================================================================
-    .section.section-intro.clearfix
+    #intro.section.section-intro.clearfix
       .container.sub-section
         %h2 About this guide
 
@@ -94,7 +94,7 @@
 
 
     / =============================================================================================
-    #intro.section.section-before-you-begin.clearfix
+    .section.section-before-you-begin.clearfix
       .container
         %h2 Before you begin
       .container.sub-section
