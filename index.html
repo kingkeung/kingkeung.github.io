@@ -13,10 +13,10 @@
       New to League - a guide for players new to League of Legends
     </title>
   </head>
-  <body data-spy='scroll' data-target='#navbar-collapse'>
+  <body data-spy='scroll' data-target='#navbar-scrollspy'>
     <!-- ============================================================================================= -->
     <!-- navigation menu -->
-    <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+    <nav class='navbar navbar-default navbar-fixed-top' id='navbar-scrollspy' role='navigation'>
       <div class='container'>
         <div class='navbar-header'>
           <button class='navbar-toggle' data-target='#navbar-collapse' data-toggle='collapse' type='button'>
@@ -28,26 +28,26 @@
         </div>
         <div class='collapse navbar-collapse' id='navbar-collapse'>
           <ul class='nav navbar-nav'>
-            <li class='active'>
-              <a href='#'>Intro</a>
+            <li>
+              <a href='#intro'>Intro</a>
             </li>
             <li>
-              <a href='#'>Sign Up</a>
+              <a href='#signup'>Sign Up</a>
             </li>
             <li>
-              <a href='#'>Tutorials</a>
+              <a href='#tutorials'>Tutorials</a>
             </li>
             <li>
-              <a href='#'>Match Prep</a>
+              <a href='#matchprep'>Match Prep</a>
             </li>
             <li>
-              <a href='#'>Matches</a>
+              <a href='#matches'>Matches</a>
             </li>
             <li>
-              <a href='#'>Improving</a>
+              <a href='#improving'>Improving</a>
             </li>
             <li>
-              <a href='#'>Misc</a>
+              <a href='#misc'>Misc</a>
             </li>
             <li class='dropdown'>
               <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
@@ -110,7 +110,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-before-you-begin clearfix'>
+    <div class='section section-before-you-begin clearfix' id='intro'>
       <div class='container'>
         <h2>Before you begin</h2>
       </div>
@@ -172,7 +172,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-signup clearfix'>
+    <div class='section section-signup clearfix' id='signup'>
       <div class='container sub-section'>
         <h2>Signup and installation</h2>
         <div class='col-md-10'>
@@ -191,7 +191,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-tutorials clearfix'>
+    <div class='section section-tutorials clearfix' id='tutorials'>
       <div class='container sub-section'>
         <h2>Completing the tutorials</h2>
         <div class='col-md-10'>
@@ -250,7 +250,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-additional-tips clearfix'>
+    <div class='section section-additional-tips clearfix' id='matchprep'>
       <div class='container sub-section'>
         <h2>Anything else before I dive in?</h2>
         <h3>Keybindings & HUD</h3>
@@ -739,7 +739,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-playing clearfix'>
+    <div class='section section-playing clearfix' id='matches'>
       <div class='container sub-section'>
         <h2>I'm ready! Lets do some matches</h2>
         <div class='col-md-10'>
@@ -869,12 +869,12 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-improvement clearfix'>
+    <div class='section section-improvement clearfix' id='improving'>
       <div class='container sub-section'>
         <h2>Ways to improve</h2>
         <p>
           <b>Always just focus on yourself.</b>
-          You are the common factor in all your games. If you fix your mistakes and increase your game knowledge you will naturally climb the ranking ladder. Calling others out just lowers morale and diverts attention from your own errors, so don't do it. Below are the quickest ways to significantly skill up.
+          You are the common factor in all your games. If you fix your mistakes and increase your game knowledge you will naturally climb the ranking ladder. Calling others out just lowers morale and diverts attention from your own errors, so don't do it. Below are areas to focus on to significantly skill up.
         </p>
       </div>
       <div class='container sub-section'>
@@ -1008,7 +1008,7 @@
       </div>
     </div>
     <!-- ============================================================================================= -->
-    <div class='section section-misc clearfix'>
+    <div class='section section-misc clearfix' id='misc'>
       <div class='container sub-section'>
         <h2>Miscellaneous</h2>
         <h3>Riot points</h3>
@@ -1043,5 +1043,6 @@
     <script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>
     <script src='http://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='common.js'></script>
   </body>
 </html>
