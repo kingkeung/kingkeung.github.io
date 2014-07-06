@@ -89,7 +89,11 @@
 
         .col-md-10
           %p
-            I'm TigerLionBear (NA). I started playing League of Legends two months ago.  As my first moba, I found the experience to be...overwhelming. With this guide, I hope to navigate hurdles I encountered to help you quickly bring value to the team. I'm a silver player, but my goal is to at least catch up to my younger brother in gold. You can follow my progress at 
+            I'm TigerLionBear (NA). I started playing League of Legends two months ago.  As my first moba, I found the experience to be...overwhelming. With this guide, I hope to navigate hurdles I encountered to help you quickly bring value to the team. I'm a
+            %s silver 
+            gold player, but my goal is to
+            %s at least catch up to my younger brother in gold
+            reach platinum. You can follow my progress at 
             %a{href: "http://gamefolio.co/kingkeung"} gamefolio.co/kingkeung.
             Welcome to summoner's rift! 
           %p
@@ -469,7 +473,7 @@
                 %img{src: "images/summoner-smite.jpg", class: "img-responsive"}/
               %td Smite
               %td 3
-              %td A must have for jungling. Deals a lot of damage to creeps and enemy minions but cannot be used on enemy champions.
+              %td A must have for jungling. Deals a lot of damage to creeps and enemy minions but cannot be used on enemy champions. It can however be used on champion minions, such as Tibbers.
             %tr
               %td 
                 %img{src: "images/summoner-barrier.jpg", class: "img-responsive"}/
@@ -723,7 +727,15 @@
 
         %p 
           %b Always just focus on yourself.
-          You are the common factor in all your games. If you fix your mistakes and increase your game knowledge you will naturally climb the ranking ladder. Calling others out just lowers morale and diverts attention from your own errors, so don't do it. Below are areas to focus on to significantly skill up.
+          You are the common factor in all your games. If you fix your mistakes and increase your game knowledge you will naturally climb the ranking ladder. Calling others out just lowers morale and diverts attention away from your own errors, so don't do it! 
+
+        %p
+          I also recommend you record and study your replays. What went well and why? What went poorly and why? How is your cs compared to your peers? I use 
+          %a{href: "http://www.leaguereplays.com/"} this
+          for replay recording as Riot hasn't added it to the game client yet. You don't have to have an account with them, just leave the program running while you play. Note: turn the fog of war on for your side so you can judge how good you calls are given the known information at the time.
+
+        %p
+          Below are specific areas you should focus on to significantly skill up.
 
       .container.sub-section
         %h3 Last hitting
@@ -732,23 +744,22 @@
 
           %p
             While kills are flashy and cool, minions are the primary source of gold. However, you only get gold for dealing the killing blow.
+            %b This is the most important skill to learn.
 
           %p
-            Because minions and towers attack each other, judging when and who to prioritize attacking is tricky.
+            Because minions and towers attack each other, judging when and who to prioritize attacking is tricky and takes practice.
 
           %p
-            You can tell how well you are doing by looking at the creep score (cs) in the in scoreboard.
-
-          %p
-            General rule for full health minions that reach your tower:
+            Situational: full health minions that reach your tower wil require
             %ul
               %li Melee minions = 2 tower hits + your auto
               %li Ranged minions = 1 tower hit + your auto (may need a second auto if dmg is low)
 
           %p
             %a{href: "http://youtu.be/6ywhB-2h2AE?t=1h1m27s"}
-              %i.fa.fa-youtube-play
-              video tutorial
+              %h4
+                %i.fa.fa-youtube-play
+                video tutorial
 
         .col-md-5.col-md-offset-1
           .thumbnail
@@ -765,15 +776,18 @@
         .col-md-6.col-md-offset-1.col-md-push-5
 
           %p
-            Trading is exchanging damage with the enemy champion. Don't be afraid! It is worth it if you dealt more damage in the trade.       
+            Trading is exchanging damage with the enemy champion.
+            %b Don't be afraid!
+            It is worth it if you dealt more damage in the trade.       
 
           %p
             This puts a lot of pressure on them if you continuously win trades. It also makes last hitting difficult for them if done correctly. This is how you win your lane! Be sure to take into account minion aggro (below) and watch the video to learn how to do it correctly.
 
           %p
             %a{href: "http://youtu.be/6ywhB-2h2AE?t=5m4s"}
-              %i.fa.fa-youtube-play
-              video tutorial
+              %h4
+                %i.fa.fa-youtube-play
+                video tutorial
 
         .col-md-5.col-md-pull-7
           .thumbnail
@@ -818,11 +832,18 @@
 
           %p
             %a{href: "http://youtu.be/5As99aAZEOE?t=9m54s"}
-              %i.fa.fa-youtube-play
-              video tutorial
+              %h4
+                %i.fa.fa-youtube-play
+                video tutorial
 
       .container.sub-section
         %h3 Map awareness
+
+        %p
+          Warding
+
+        %p
+          Looking at the minimap
 
       .container.sub-section
         %h3 Pings
