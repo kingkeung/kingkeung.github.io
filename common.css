@@ -18,6 +18,10 @@ nav.navbar-default {
     text-align: center; }
     nav.navbar-default .navbar-nav a:hover {
       color: white; }
+    @media (max-width: 768px) {
+      nav.navbar-default .navbar-nav a {
+        min-width: 300px;
+        text-align: left; } }
   nav.navbar-default .navbar-nav .active a {
     background-image: none;
     background-color: transparent;
@@ -37,6 +41,8 @@ nav.navbar-default {
   nav.navbar-default .navbar-nav .dropdown .dropdown-menu a {
     color: #333333;
     text-align: left; }
+  nav.navbar-default .navbar-toggle:focus, nav.navbar-default .navbar-toggle:active, nav.navbar-default .navbar-toggle:visited, nav.navbar-default .navbar-toggle:hover, nav.navbar-default .navbar-toggle:link {
+    background-color: transparent; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif; }

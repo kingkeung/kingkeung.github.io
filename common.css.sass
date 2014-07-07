@@ -29,6 +29,11 @@ nav.navbar-default
       &:hover
         color: #ffffff
 
+      @media (max-width: 768px)
+        min-width: 300px
+        text-align: left
+
+
     .active
       a
         background-image: none
@@ -56,6 +61,10 @@ nav.navbar-default
         a
           color: #333
           text-align: left
+
+  .navbar-toggle
+    &:focus, &:active, &:visited, &:hover, &:link
+      background-color: transparent
       
 
 
