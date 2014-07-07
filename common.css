@@ -2,6 +2,42 @@
   padding-left: 0px;
   padding-right: 0px; }
 
+nav.navbar-default {
+  background-image: none;
+  background-color: rgba(54, 164, 204, 0.9);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+  nav.navbar-default .navbar-toggle .icon-bar {
+    background-color: white; }
+  nav.navbar-default .navbar-brand {
+    color: white; }
+  nav.navbar-default .navbar-nav a {
+    color: white;
+    text-align: center; }
+    nav.navbar-default .navbar-nav a:hover {
+      color: white; }
+  nav.navbar-default .navbar-nav .active a {
+    background-image: none;
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+    font-weight: 500; }
+    nav.navbar-default .navbar-nav .active a:hover {
+      background-image: none;
+      background-color: transparent;
+      color: white; }
+  nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:focus, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:active, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:visited, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:hover, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:link {
+    background-image: none;
+    background-color: transparent;
+    color: white; }
+  nav.navbar-default .navbar-nav .dropdown .dropdown-menu a {
+    color: #333333;
+    text-align: left; }
+
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif; }
 
@@ -24,7 +60,6 @@ h4 {
 body {
   font-family: "Oxygen", sans-serif;
   position: relative;
-  padding-top: 50px;
   height: 100%; }
 
 p, li {
@@ -45,7 +80,7 @@ ul {
   color: white;
   margin-bottom: 0px; }
   .jumbotron .container {
-    padding-top: 75px;
+    padding-top: 125px;
     padding-bottom: 75px; }
 
 .thumbnail {
