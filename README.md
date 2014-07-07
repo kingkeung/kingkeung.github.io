@@ -2,15 +2,22 @@
 A guide for players completely new to the game
 
 ### How to contribute
-Modify the following files:
-* common.css.sass
-* index.html.haml
 
-Optional: create the corresponding css and html files by running:
+1. Fork this repository.
 
-```
-haml index.html.haml index.html
-sass --update common.css.sass:common.css
-```
+2. Modify the following files:
+  * common.css.sass
+  * index.html.haml
 
-The haml and sass gems are required to perform this step
+  Optional: create the corresponding css and html files by running:
+
+  ```
+  haml index.html.haml index.html
+  sass --update common.css.sass:common.css
+  ```
+
+  The haml and sass gems are required to perform this step
+
+3. Pull the latest changes from this repo (if any)
+4. Fix conflicts then submit a pull request
+
