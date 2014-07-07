@@ -1,9 +1,9 @@
 # New to League
-A guide for players completely new to the game
+A guide for players completely new to League of Legends. [NewToLeague.com](http://newtoleague.com)
 
 ### How to contribute
 
-1. Fork this repository.
+1. Fork this repository
 
 2. Modify the following files:
   * common.css.sass
