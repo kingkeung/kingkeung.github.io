@@ -29,7 +29,8 @@ nav.navbar-default {
     -webkit-box-shadow: none;
     box-shadow: none;
     color: white;
-    font-weight: 500; }
+    font-weight: 500;
+    text-shadow: none; }
   nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:focus, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:active, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:visited, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:hover, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:link {
     background-image: none;
     background-color: transparent;
@@ -63,6 +64,9 @@ body {
   font-family: "Oxygen", sans-serif;
   position: relative;
   height: 100%; }
+
+a {
+  color: #36a4cc; }
 
 p, li {
   font-size: 1.2em;
@@ -126,3 +130,9 @@ ul {
           width: 500px;
           right: 0px;
           top: 175px; }
+
+#credits {
+  background-color: #3f3f3f;
+  color: white; }
+  #credits h2 {
+    color: white; }
