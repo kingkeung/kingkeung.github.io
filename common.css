@@ -7,8 +7,8 @@ nav.navbar-default {
   background-color: rgba(54, 164, 204, 0.9);
   border: none;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300; }
   nav.navbar-default .navbar-toggle .icon-bar {
     background-color: white; }
   nav.navbar-default .navbar-brand {
@@ -22,18 +22,14 @@ nav.navbar-default {
       nav.navbar-default .navbar-nav a {
         min-width: 300px;
         text-align: left; } }
-  nav.navbar-default .navbar-nav .active a {
+  nav.navbar-default .navbar-nav .active a, nav.navbar-default .navbar-nav .active a:link, nav.navbar-default .navbar-nav .active a:hover, nav.navbar-default .navbar-nav .active a:visited, nav.navbar-default .navbar-nav .active a:active, nav.navbar-default .navbar-nav .active a:focus {
     background-image: none;
-    background-color: transparent;
+    background-color: transparent !important;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: white;
-    font-weight: 500; }
-    nav.navbar-default .navbar-nav .active a:hover {
-      background-image: none;
-      background-color: transparent;
-      color: white; }
+    color: white !important;
+    font-weight: 400; }
   nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:focus, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:active, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:visited, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:hover, nav.navbar-default .navbar-nav .dropdown a.dropdown-toggle:link {
     background-image: none;
     background-color: transparent;
