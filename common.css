@@ -133,6 +133,7 @@ ul {
 
 #credits {
   background-color: #3f3f3f;
-  color: white; }
+  color: white;
+  margin-bottom: 0px; }
   #credits h2 {
     color: white; }
